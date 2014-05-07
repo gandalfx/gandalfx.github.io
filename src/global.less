@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../bin/fontawesome-webfont.ttf');
+  // font-weight: <weight>;
+  // font-style: <style>;
+}
+
 /*** vars ***/
 
 @gap: 50px;
@@ -50,6 +57,10 @@ a:hover, a:focus, a:active
   color: #b54;
 }
 
+.icon {
+  font-family: 'FontAwesome', sans-serif;
+}
+
 /*** layout ***/
 
 html {
@@ -61,7 +72,7 @@ body {
   text-align: center;
   color: #aaa;
   background-color: #1a1a1a;
-  background-image: url('bg.png');
+  background-image: url("../bin/bg.png");
   box-shadow: inset 3px 3px 3px rgba(0,0,0,.3);
 }
 #header, #footer {
@@ -325,7 +336,7 @@ h1 {
 
 // individual styles
 body.white {
-  background-image: url("bg-white.png");
+  background-image: url("../bin/bg-white.png");
   box-shadow: none;
   
   #header, #footer {
